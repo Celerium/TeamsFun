@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Project Documentation
+    url: https://celerium.github.io/T/
+    about: Read through the generated documentation
+  - name: Celerium.org
+    url: https://celerium.org
+    about: Website were I publish more information related to this project.

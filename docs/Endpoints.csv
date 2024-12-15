@@ -1,0 +1,5 @@
+﻿Category,EndpointUri,Method,Function,Complete,Notes
+dog,,POST,Send-TeamsWoof,YES,
+cat,,POST,Send-TeamsPurr,YES,
+dad,,POST,Send-TeamsDadJoke,YES,
+pokemon,,POST,Send-TeamsPokemon,YES,

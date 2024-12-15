@@ -1,3 +1,14 @@
+---
+external help file: TeamsFun-help.xml
+Module Name: TeamsFun
+online version: https://github.com/Celerium/TeamsFun
+schema: 2.0.0
+title: Home
+has_children: true
+layout: default
+nav_order: 1
+---
+
 # TeamsFun
 
 Just a simple module for posting silly things to Microsoft Teams

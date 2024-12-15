@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Send-TeamsPurr</command:name>
+      <command:verb>Send</command:verb>
+      <command:noun>TeamsPurr</command:noun>
+      <maml:description>
+        <maml:para>Sends a cat image &amp; fact to a Teams channel</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Send-TeamsPurr cmdlet sends a cat image &amp; fact to a Teams channel using a Teams webhook connector URI.</maml:para>
+      <maml:para>Various filters are in place to try and prevent any inappropriate images from being sent.</maml:para>
+      <maml:para>An image is randomly selected from a random cat subreddit. Cat facts are pulled from the catfact.ninja API When the r/Chonkers subreddit is used, the Teams post will be formatting to accommodate for the chonks size.</maml:para>
+      <maml:para>Unless the -Verbose parameter is used, no output is displayed</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Send-TeamsPurr</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>TeamsUri</maml:name>
+          <maml:description>
+            <maml:para>A string that defines where the Microsoft Teams connector URI sends information to</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>TeamsUri</maml:name>
+        <maml:description>
+          <maml:para>A string that defines where the Microsoft Teams connector URI sends information to</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>TeamsURI</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Console</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>NAME: Send-TeamsPurr.ps1 Type: PowerShell</maml:para>
+        <maml:para>    AUTHOR:  David Schulte     DATE:    2022-06-20     EMAIL:   celerium@celerium.org     Updated:     Date:</maml:para>
+        <maml:para>VERSION HISTORY: 0.1 - 2022-06-20 - Initial Release 0.2 - 2024-12-15 - General cleanup</maml:para>
+        <maml:para>TODO: N\A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>.\Send-TeamsPurr.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....'</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random cat image &amp; fact are sent to the webhooks Teams channel</maml:para>
+          <maml:para>No output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>.\Send-TeamsPurr.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random cat image &amp; fact are sent to the webhooks Teams channel.</maml:para>
+          <maml:para>Output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://celerium.github.io/TeamsFun/site/cat/Send-TeamsPurr.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://www.celerium.org</maml:linkText>
+        <maml:uri>https://www.celerium.org</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Send-TeamsDadJoke</command:name>
+      <command:verb>Send</command:verb>
+      <command:noun>TeamsDadJoke</command:noun>
+      <maml:description>
+        <maml:para>Sends a dad joke to a Teams channel</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Send-TeamsDadJoke cmdlet sends a dad joke to a Teams channel using a Teams webhook connector URI.</maml:para>
+      <maml:para>Unless the -Verbose parameter is used, no output is displayed</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Send-TeamsDadJoke</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>TeamsUri</maml:name>
+          <maml:description>
+            <maml:para>A string that defines where the Microsoft Teams connector URI sends information to</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>TeamsUri</maml:name>
+        <maml:description>
+          <maml:para>A string that defines where the Microsoft Teams connector URI sends information to</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>TeamsURI</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Console</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>NAME: Send-TeamsDadJoke.ps1 Type: PowerShell</maml:para>
+        <maml:para>    AUTHOR:  David Schulte     DATE:    2022-06-20     EMAIL:   celerium@celerium.org     Updated:     Date:</maml:para>
+        <maml:para>VERSION HISTORY: 0.1 - 2022-06-20 - Initial Release 0.2 - 2024-12-15 - General cleanup</maml:para>
+        <maml:para>TODO: N\A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>.\Send-TeamsDadJoke.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....'</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random dad joke is sent to the webhooks Teams channel</maml:para>
+          <maml:para>No output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>.\Send-TeamsDadJoke.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random dad joke is sent to the webhooks Teams channel.</maml:para>
+          <maml:para>Output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://celerium.github.io/TeamsFun/site/dad/Send-TeamsDadJoke.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://www.celerium.org</maml:linkText>
+        <maml:uri>https://www.celerium.org</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Send-TeamsWoof</command:name>
+      <command:verb>Send</command:verb>
+      <command:noun>TeamsWoof</command:noun>
+      <maml:description>
+        <maml:para>Sends a dog image &amp; fact to a Teams channel</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Send-TeamsWoof cmdlet sends a dog image &amp; fact to a Teams channel using a Teams webhook connector URI.</maml:para>
+      <maml:para>Various filters are in place to try and prevent any inappropriate images from being sent.</maml:para>
+      <maml:para>An image is randomly selected from a random dog subreddit. Dog facts are pulled from the dogapi.dog API</maml:para>
+      <maml:para>Unless the -Verbose parameter is used, no output is displayed</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Send-TeamsWoof</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>TeamsUri</maml:name>
+          <maml:description>
+            <maml:para>A string that defines where the Microsoft Teams connector URI sends information to</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>TeamsUri</maml:name>
+        <maml:description>
+          <maml:para>A string that defines where the Microsoft Teams connector URI sends information to</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>TeamsURI</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Console</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>NAME: Send-TeamsWoof.ps1 Type: PowerShell</maml:para>
+        <maml:para>    AUTHOR:  David Schulte     DATE:    2022-06-20     EMAIL:   celerium@celerium.org     Updated:     Date:</maml:para>
+        <maml:para>VERSION HISTORY: 0.1 - 2022-06-20 - Initial Release 0.2 - 2024-12-15 - General cleanup</maml:para>
+        <maml:para>TODO: N\A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>.\Send-TeamsWoof.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....'</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random dog image &amp; fact are sent to the webhooks Teams channel</maml:para>
+          <maml:para>No output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>.\Send-TeamsWoof.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random dog image &amp; fact are sent to the webhooks Teams channel.</maml:para>
+          <maml:para>Output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://celerium.github.io/TeamsFun/site/dog/Send-TeamsWoof.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://www.celerium.org</maml:linkText>
+        <maml:uri>https://www.celerium.org</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Send-TeamsPokemon</command:name>
+      <command:verb>Send</command:verb>
+      <command:noun>TeamsPokemon</command:noun>
+      <maml:description>
+        <maml:para>Sends a Pokemon image &amp; stats to a Teams channel</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Send-Pokemon script sends a Pokemon image &amp; stats to a Teams channel using a Teams webhook connector URI.</maml:para>
+      <maml:para>This script will only send to teams if the $DeployPokemon variable is set to true which is randomized</maml:para>
+      <maml:para>Pokemon images &amp; facts are pulled from the PokeAPI</maml:para>
+      <maml:para>Unless the -Verbose parameter is used, no output is displayed.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Send-TeamsPokemon</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>TeamsUri</maml:name>
+          <maml:description>
+            <maml:para>A string that defines where the Microsoft Teams connector URI sends information to.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>TeamsUri</maml:name>
+        <maml:description>
+          <maml:para>A string that defines where the Microsoft Teams connector URI sends information to.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>TeamsURI</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Console</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>NAME: Send-TeamsPokemon.ps1 Type: PowerShell</maml:para>
+        <maml:para>    AUTHOR:  David Schulte     DATE:    2022-06-20     EMAIL:   celerium@celerium.org     Updated:     Date:</maml:para>
+        <maml:para>VERSION HISTORY: 0.1 - 2022-06-20 - Initial Release 0.2 - 2024-12-15 - General cleanup</maml:para>
+        <maml:para>TODO: N\A</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>.\Send-Pokemon.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....'</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random Pokemon image &amp; stats are sent to the webhooks Teams channel.</maml:para>
+          <maml:para>No output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>.\Send-Pokemon.ps1 -TeamsURI 'https://outlook.office.com/webhook/123/123/123/.....' -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Using the defined webhooks connector URI a random Pokemon image &amp; stats are sent to the webhooks Teams channel.</maml:para>
+          <maml:para>Output is displayed to the console.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://celerium.github.io/TeamsFun/site/pokemon/Send-TeamsPokemon.html</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://www.celerium.org</maml:linkText>
+        <maml:uri>https://www.celerium.org</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>
