@@ -69,7 +69,10 @@ param(
 
         [Parameter(Mandatory=$true)]
         [ValidateSet( 'DadJoke', 'Pokemon', 'Purr', 'Woof', 'All')]
-        [String[]]$Invoke
+        [String[]]$Invoke,
+
+        [Parameter(Mandatory=$false)]
+        [Switch]$LocalModule
     )
 
 #EndRegion  [ Parameters ]
@@ -105,6 +108,10 @@ $StepNumber++
 #Region     [ Main Code ]
 
 try {
+
+    if ($LocalModule) {
+        Import-Module .\TeamsFun.psd1 -Force -Verbose:$false
+    }
 
     if ($Invoke -eq 'DadJoke' -or $Invoke -eq 'All') {
 
