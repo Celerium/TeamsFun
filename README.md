@@ -35,7 +35,7 @@ Get-Help Send-TeamsPurr.ps1 -Full
 
 Dad jokes are randomly selected from [icanhazdadjoke.com](icanhazdadjoke.com)
 
-![Send-TeamsDadJoke](https://raw.githubusercontent.com/Celerium/TeamsFun/main/.github/Celerium-Send-DadJoke-Example001.png)
+![Send-TeamsDadJoke](https://github.com/Celerium/TeamsFun/blob/main/.github/images/Celerium-Send-DadJoke-Example001.png)
 
 ---
 
@@ -45,7 +45,7 @@ Pokemon data is pulled from the [PokeAPI API](https://pokeapi.co/) using the [Po
 
 When this script runs it randomly selects a day of the week and tries to match it to the current day of the week. I put this in to simulate wondering through tall grass to randomly get a pokemon
 
-![Send-TeamsPokemon](https://raw.githubusercontent.com/Celerium/TeamsFun/main/.github/Celerium-Send-Pokemon-Example001.png)
+![Send-TeamsPokemon](https://github.com/Celerium/TeamsFun/blob/main/.github/images/Celerium-Send-Pokemon-Example001.png)
 
 ---
 
@@ -54,7 +54,7 @@ When this script runs it randomly selects a day of the week and tries to match i
 An image is randomly selected from a random cat subreddit. Cat facts are pulled from the catfact.ninja API
 When the r/Chonkers subreddit is used, the Teams post will be formatting to accommodate for the chonks size.
 
-![Send-TeamsPurr](https://raw.githubusercontent.com/Celerium/TeamsFun/main/.github/Celerium-Send-Purr-Example001.png)
+![Send-TeamsPurr](https://github.com/Celerium/TeamsFun/blob/main/.github/images/Celerium-Send-Purr-Example001.png)
 
 ---
 
@@ -63,6 +63,6 @@ When the r/Chonkers subreddit is used, the Teams post will be formatting to acco
 An image is randomly selected from a random dog subreddit. Dog facts are pulled from the [Dog API](https://dogapi.dog)
 When the r/Puppies subreddit is used, the Teams post will be formatting to accommodate for the puppies size.
 
-![Send-TeamsWoof](https://raw.githubusercontent.com/Celerium/TeamsFun/main/.github/Celerium-Send-Woof-Example001.png)
+![Send-TeamsWoof](https://github.com/Celerium/TeamsFun/blob/main/.github/images/Celerium-Send-Woof-Example001.png)
 
 ---
