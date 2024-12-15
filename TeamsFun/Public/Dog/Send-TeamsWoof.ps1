@@ -71,7 +71,7 @@ param(
 
 begin {
 
-    $FunctionName           = $MyInvocation.InvocationName -replace '-','_'
+    $FunctionName           = $MyInvocation.InvocationName
     $ErrorActionPreference  = 'Stop'
 
 }
@@ -80,7 +80,7 @@ process {
 
 #Region     [ Prerequisites ]
 
-    $Log        = "C:\GW\Logs\$FunctionName-Report"
+    $Log        = "C:\Celerium\Logs\$FunctionName-Report"
     $TXTReport  = "$Log\$FunctionName-Log.txt"
     $StepNumber = 0
 
@@ -242,6 +242,7 @@ process {
             Json    = $JsonBody
         }
 
+        $FunctionName = $MyInvocation.InvocationName -replace '-','_'
         Set-Variable -Name $FunctionName -Value $FunctionNameReturn -Scope Global -Force
 
     }

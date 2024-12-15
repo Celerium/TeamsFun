@@ -74,7 +74,7 @@ param(
 
 begin {
 
-    $FunctionName           = $MyInvocation.InvocationName -replace '-','_'
+    $FunctionName           = $MyInvocation.InvocationName
     $ErrorActionPreference  = 'Stop'
 
 }
@@ -83,7 +83,7 @@ process {
 
 #Region     [ Prerequisites ]
 
-    $Log        = "C:\GW\Logs\$FunctionName-Report"
+    $Log        = "C:\Celerium\Logs\$FunctionName-Report"
     $TXTReport  = "$Log\$FunctionName-Log.txt"
     $StepNumber = 0
 
@@ -250,6 +250,7 @@ process {
             Json    = $JsonBody
         }
 
+        $FunctionName = $MyInvocation.InvocationName -replace '-','_'
         Set-Variable -Name $FunctionName -Value $FunctionNameReturn -Scope Global -Force
 
     }
@@ -267,7 +268,7 @@ process {
 end {}
 
 }
-#EndRegion '.\Public\Cat\Send-TeamsPurr.ps1' 268
+#EndRegion '.\Public\Cat\Send-TeamsPurr.ps1' 269
 #Region '.\Public\Dad\Send-TeamsDadJoke.ps1' -1
 
 
@@ -339,7 +340,7 @@ param(
 
 begin {
 
-    $FunctionName           = $MyInvocation.InvocationName -replace '-','_'
+    $FunctionName           = $MyInvocation.InvocationName
     $ErrorActionPreference  = 'Stop'
 
 }
@@ -348,7 +349,7 @@ process {
 
 #Region     [ Prerequisites ]
 
-    $Log        = "C:\GW\Logs\$FunctionName-Report"
+    $Log        = "C:\Celerium\Logs\$FunctionName-Report"
     $TXTReport  = "$Log\$FunctionName-Log.txt"
     $StepNumber = 0
 
@@ -449,6 +450,7 @@ process {
             Json    = $JsonBody
         }
 
+        $FunctionName = $MyInvocation.InvocationName -replace '-','_'
         Set-Variable -Name $FunctionName -Value $FunctionNameReturn -Scope Global -Force
 
     }
@@ -466,7 +468,7 @@ process {
 end {}
 
 }
-#EndRegion '.\Public\Dad\Send-TeamsDadJoke.ps1' 197
+#EndRegion '.\Public\Dad\Send-TeamsDadJoke.ps1' 198
 #Region '.\Public\Dog\Send-TeamsWoof.ps1' -1
 
 
@@ -542,7 +544,7 @@ param(
 
 begin {
 
-    $FunctionName           = $MyInvocation.InvocationName -replace '-','_'
+    $FunctionName           = $MyInvocation.InvocationName
     $ErrorActionPreference  = 'Stop'
 
 }
@@ -551,7 +553,7 @@ process {
 
 #Region     [ Prerequisites ]
 
-    $Log        = "C:\GW\Logs\$FunctionName-Report"
+    $Log        = "C:\Celerium\Logs\$FunctionName-Report"
     $TXTReport  = "$Log\$FunctionName-Log.txt"
     $StepNumber = 0
 
@@ -713,6 +715,7 @@ process {
             Json    = $JsonBody
         }
 
+        $FunctionName = $MyInvocation.InvocationName -replace '-','_'
         Set-Variable -Name $FunctionName -Value $FunctionNameReturn -Scope Global -Force
 
     }
@@ -730,7 +733,7 @@ process {
 end {}
 
 }
-#EndRegion '.\Public\Dog\Send-TeamsWoof.ps1' 262
+#EndRegion '.\Public\Dog\Send-TeamsWoof.ps1' 263
 #Region '.\Public\Pokemon\Send-TeamsPokemon.ps1' -1
 
 function Send-TeamsPokemon {
@@ -805,7 +808,7 @@ param(
 
 begin {
 
-    $FunctionName           = $MyInvocation.InvocationName -replace '-','_'
+    $FunctionName           = $MyInvocation.InvocationName
     $ErrorActionPreference  = 'Stop'
 
 }
@@ -814,7 +817,7 @@ process {
 
 #Region     [ Prerequisites ]
 
-    $Log        = "C:\GW\Logs\$FunctionName-Report"
+    $Log        = "C:\Celerium\Logs\$FunctionName-Report"
     $TXTReport  = "$Log\$FunctionName-Log.txt"
     $StepNumber = 0
 
@@ -1085,6 +1088,7 @@ $JsonBody = @"
             Json    = $JsonBody
         }
 
+        $FunctionName = $MyInvocation.InvocationName -replace '-','_'
         Set-Variable -Name $FunctionName -Value $FunctionNameReturn -Scope Global -Force
 
     }
@@ -1103,4 +1107,4 @@ $JsonBody = @"
 end {}
 
 }
-#EndRegion '.\Public\Pokemon\Send-TeamsPokemon.ps1' 371
+#EndRegion '.\Public\Pokemon\Send-TeamsPokemon.ps1' 372
